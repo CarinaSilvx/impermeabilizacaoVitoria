@@ -176,17 +176,11 @@ img {
     color: var(--primary-color);
 }
 
-.mobile-menu {
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
 /* Hero Section */
 .hero {
     height: 100vh;
     min-height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg.jpg') no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
@@ -589,7 +583,32 @@ img {
     }
 
     .mobile-menu {
-        display: block;
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-menu {
+            display: block;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px; /* ou altura do header */
+            left: 0;
+            width: 100%;
+            background-color: #fff; /* ou o que quiser */
+        }
+
+        .navbar.active {
+            display: flex;
+        }
+
+        .navbar a {
+            padding: 10px 20px;
+        }
     }
 
     .hero h1 {
