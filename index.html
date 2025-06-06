@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site One Page</title>
+  <title>Impermeabilização Vitória</title>
   <style>
-    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -14,86 +13,182 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      background-color: #1a1a1a;
     }
 
-    /* Navbar fixa */
     .navbar {
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: #333;
-      color: white;
+      background-color: #e53935;
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 15px 0;
       z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
     .navbar a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      font-size: 16px;
       transition: color 0.3s;
     }
 
     .navbar a:hover {
-      color: #00e6e6;
+      color: #ffe082;
     }
 
-    /* Espaço para compensar a navbar fixa */
     .section {
-      padding: 100px 20px;
+      padding: 120px 20px 80px;
       min-height: 100vh;
     }
 
-    /* Cores diferentes para visualização */
-    #inicio { background: #f4f4f4; }
-    #sobre { background: #ddd; }
-    #servicos { background: #bbb; }
-    #contato { background: #999; }
+    #inicio {
+      background-color: #e53935;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-    h2 {
+    #inicio img {
+      width: 180px;
       margin-bottom: 20px;
     }
 
-    p {
+    #inicio h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    #inicio p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    #sobre, #servicos, #contato {
+      background-color: #2b2b2b;
+    }
+
+    #galeria {
+      background-color: #212121;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffe082;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .galeria-imagens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .galeria-imagens img {
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .galeria-imagens img:hover {
+      transform: scale(1.1);
+    }
+
+    .servicos-lista {
       max-width: 600px;
       margin: 0 auto;
-      line-height: 1.6;
+      line-height: 1.8;
+    }
+
+    .contato-info {
+      text-align: center;
+      line-height: 2;
+    }
+
+    .contato-info a {
+      color: #ffe082;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar fixa -->
   <nav class="navbar">
     <a href="#inicio">Início</a>
     <a href="#sobre">Sobre</a>
+    <a href="#galeria">Galeria</a>
     <a href="#servicos">Serviços</a>
     <a href="#contato">Contato</a>
   </nav>
 
-  <!-- Seções do site -->
   <section id="inicio" class="section">
-    <h2>Início</h2>
-    <p>Bem-vindo ao meu site one page! Aqui você encontra tudo em uma única página.</p>
+    <img src="Impermeabilização%20manta4.png" alt="Logo da Vitória Impermeabilização">
+    <h1>Bem-vindo à Vitória Impermeabilização</h1>
+    <p>Especialistas em manta asfáltica, lajes, piscinas e muito mais. Protegendo sua casa contra infiltrações com qualidade e segurança.</p>
   </section>
 
   <section id="sobre" class="section">
-    <h2>Sobre</h2>
-    <p>Essa é a seção sobre. Aqui você pode colocar informações sobre você, sua empresa ou projeto.</p>
+    <h2>Sobre Nós</h2>
+    <p class="servicos-lista">
+      A Vitória Impermeabilização atua no mercado oferecendo serviços especializados para proteger sua construção contra infiltrações. Trabalhamos com experiência e comprometimento em cada projeto.
+    </p>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Galeria</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="galeria-imagens">
+      <img src="img1.jpg" alt="Imagem 1">
+      <img src="img2.jpg" alt="Imagem 2">
+      <img src="img3.jpg" alt="Imagem 3">
+    </div>
   </section>
 
   <section id="servicos" class="section">
     <h2>Serviços</h2>
-    <p>Esta seção descreve os serviços oferecidos. Você pode personalizar conforme desejar.</p>
+    <p class="servicos-lista">
+      - Calhas<br>
+      - Telhas<br>
+      - Lajes<br>
+      - Piscinas<br>
+      - Entre outros
+    </p>
   </section>
 
   <section id="contato" class="section">
     <h2>Contato</h2>
-    <p>Entre em contato por email, redes sociais ou formulário aqui nesta seção.</p>
+    <div class="contato-info">
+      <p>Whatsapp: <a href="https://wa.me/554885050168" target="_blank">(48) 8505-0168</a></p>
+      <p>Instagram: <a href="https://instagram.com/impermeabilizacaovitoria" target="_blank">@impermeabilizacaovitoria</a></p>
+    </div>
   </section>
 
 </body>
