@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site One Page</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar fixa */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #00e6e6;
+    }
+
+    /* Espaço para compensar a navbar fixa */
+    .section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    /* Cores diferentes para visualização */
+    #inicio { background: #f4f4f4; }
+    #sobre { background: #ddd; }
+    #servicos { background: #bbb; }
+    #contato { background: #999; }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar fixa -->
+  <nav class="navbar">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- Seções do site -->
+  <section id="inicio" class="section">
+    <h2>Início</h2>
+    <p>Bem-vindo ao meu site one page! Aqui você encontra tudo em uma única página.</p>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>Sobre</h2>
+    <p>Essa é a seção sobre. Aqui você pode colocar informações sobre você, sua empresa ou projeto.</p>
+  </section>
+
+  <section id="servicos" class="section">
+    <h2>Serviços</h2>
+    <p>Esta seção descreve os serviços oferecidos. Você pode personalizar conforme desejar.</p>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Entre em contato por email, redes sociais ou formulário aqui nesta seção.</p>
+  </section>
+
+</body>
+</html>
