@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impermeabilização Vitória</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="{% static 'images/logo.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Impermeabilização<span>Vitória</span></a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Início) -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Soluções Modernas para seu Ambiente</h1>
+                <p>Oferecendo os melhores serviços para diversas necessidades.</p>
+                <a href="#contato" class="btn">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Nós</h2>
+                <p>Conheça nossa história e valores</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Jornada</h3>
+                    <p>Fundada em 2016, a ImpermeabilizaçãoVitória atender as necessidades. Ao longo dos anos, crescemos e nos tornamos referência em impermeabilizações.</p>
+                    <p>Nossa equipe é composta por profissionais altamente qualificados, sempre buscando as melhores soluções para nossos clientes.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="number">200+</span>
+                            <span class="label">Clientes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">03</span>
+                            <span class="label">Prêmios</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">98%</span>
+                            <span class="label">Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/sobre.jpg" alt="Trabalhos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria" class="gallery section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeria</h2>
+                <p>Alguns de nossos trabalhos</p>
+
+                <div class="featured-video">
+                    <div class="video-container">
+                        <video controls width="100%" style="border-radius: 8px;">
+                            <source src="images/videocompleto.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeo HTML5.
+                        </video>
+                    </div>
+                    <div class="video-caption">
+                        <h3>Nosso Trabalho em Destaque</h3>
+                        <p>Confira este vídeo que mostra um de nossos projetos recentes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="images/1.jpg" target="_blank">
+                        <img src="images/1.jpg" alt="Projeto 1">
+                    </a>
+                    <div class="overlay">
+                        <h3>Vedacit</h3>
+                        <a href="images/1.jpg" target="_blank" class="view-btn">Abrir</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/2.jpg" target="_blank">
+                        <img src="images/2.jpg" alt="Projeto 2">
+                    </a>
+                    <div class="overlay">
+                        <h3>Vedacit</h3>
+                        <a href="images/2.jpg" target="_blank" class="view-btn">Abrir</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/3.jpg" target="_blank">
+                        <img src="images/3.jpg" alt="Projeto 3">
+                    </a>
+                    <div class="overlay">
+                        <h3>Manta Asfáltica</h3>
+                        <a href="images/3.jpg" target="_blank" class="view-btn">Abrir</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/4.jpg" target="_blank">
+                        <img src="images/4.jpg" alt="Projeto 4">
+                    </a>
+                    <div class="overlay">
+                        <h3>Manta Asfáltica em Casa</h3>
+                        <a href="images/4.jpg" target="_blank" class="view-btn">Abrir</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/5.jpg" target="_blank">
+                        <img src="images/5.jpg" alt="Projeto 5">
+                    </a>
+                    <div class="overlay">
+                        <h3>Manta Asfáltica em Galpão</h3>
+                        <a href="images/5.jpg" target="_blank" class="view-btn">Abrir</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/6.jpg" target="_blank">
+                        <img src="images/6.jpg" alt="Projeto 6">
+                    </a>
+                    <div class="overlay">
+                        <h3>Piscinas</h3>
+                        <a href="images/6.jpg" target="_blank" class="view-btn">Abrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="services section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Como podemos ajudar seu negócio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Calhas</h3>
+                    <p>Trabalho.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Telhas</h3>
+                    <p>Trabalho.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Lajes</h3>
+                    <p>Trabalho.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Rufos</h3>
+                    <p>Trabalho.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Piscinas</h3>
+                    <p>Trabalho.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Pinturas</h3>
+                    <p>Trabalho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Endereço</h3>
+                            <p>R. Valdemiro João de Espíndola,0 <br>Palhoça - SC</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Telefone</h3>
+                            <p>(48) 98505-0168</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>contato@impermeabilizacaovitoria.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Horário</h3>
+                            <p>Seg-Sex: 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Assunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Impermeabilização Vitória</h3>
+                    <p>Há 09 anos realizando sonhos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/impermeabilizacaovitoria"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Calhas</a></li>
+                        <li><a href="#">Telhas</a></li>
+                        <li><a href="#">Lajes</a></li>
+                        <li><a href="#">Rufos</a></li>
+                        <li><a href="#">Piscinas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Assine nossa newsletter para receber novidades.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Impermeabilização Vitória. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
